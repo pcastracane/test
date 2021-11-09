@@ -1,0 +1,276 @@
+{
+  "example for Paolo": {
+    "list values with and without conditions example": {
+      "values": [
+        "value1 without condition",
+        {
+          "values": [
+            "single value with condition"
+          ],
+          "condition": "display values if ..."
+        },
+        "value2 without condition",
+        "value3 without condition",
+        {
+          "values": [
+            "several values with same condition",
+            "several values with same condition",
+            "several values with same condition",
+            "several values with same condition"
+          ],
+          "condition": "display values if ..."
+        },
+        "value4 without condition",
+        "value5 without condition",
+        "value6 without condition"
+      ]
+    }
+  },
+  "below the query pages and the result page": "",
+  "_._": "",
+  "_..": "",
+  "acix query widget": {
+    "headline": "ACIX II Land",
+    "description": "This survey aims at finding out about your workflows with different sensors and datasets.",
+    "query pages": [
+      {
+        "page-header": "Satellite sensors and processors",
+        "page-text": "Please select a Satellite sensor and one option in the processor's list",
+        "inputs": [
+          {
+            "type": "Single Selection",
+            "label-text": "Satellite sensors",
+            "help-text": "???",
+            "required": "true/false",
+            "values": [
+              "Sentinel-2 MSI",
+              "Landsat-8 OLI"
+            ]
+          },
+          {
+            "type": "Select From List",
+            "label-text": "AC Processors",
+            "help-text": "???",
+            "required": "true/false",
+            "values": [
+              "All Processors",
+              "Force",
+              "Sen2Cor",
+              "MAJA",
+              "GRASP",
+              "SMAC-G/MERRA2",
+              "ACTOR",
+              "LaSRC",
+              "SIAC",
+              "iCor",
+              "Planet SR",
+              "Overland",
+              "Acomp"
+            ]
+          }
+        ]
+      },
+      {
+        "page-header": "Metrics",
+        "page-text": "Please select a metric at a time",
+        "inputs": [
+          {
+            "type": "Select From List",
+            "label-text": "Aerosol Optical Depth",
+            "help-text": "???",
+            "required": "true/false",
+            "values": [
+              "AOD vs AERONET (all sites)",
+              "AOD vs AERONET (per site)"
+            ]
+          },
+          {
+            "type": "Select From List",
+            "label-text": "Water Vapour",
+            "help-text": "???",
+            "required": "true/false",
+            "values": [
+              "Wv vs AERONET"
+            ]
+          },
+          {
+            "type": "Select From List",
+            "label-text": "Surface Reflectance",
+            "help-text": "???",
+            "required": "true/false",
+            "values": [
+              "Time series of estimated SRs",
+              "Validation with RadCalNET per band",
+              "APU analysis with AERONET corr. data (all sites)",
+              "APU analysis with AERONET corr. data (per site and processor's QA mask)",
+              "APU analysis with AERONET corr. data (per site and LaSRC's QA mask)"
+            ]
+          }
+        ]
+      },
+      {
+        "page-header": "Sites",
+        "page-text": "Please select one option in the list below",
+        "inputs": [
+          {
+            "type": "Single From List",
+            "label-text": "AERONET and RadCalNet",
+            "help-text": "???",
+            "required": "true/false",
+            "values": [
+              "All sites",
+              "Alta_Floresta",
+              "Ames",
+              "ATHENS-NOA",
+              "Aubiere_LAMP",
+              "Bandung",
+              "Banizoumbou",
+              "Barcelona",
+              "Beijing",
+              "Beijing-CAMS",
+              "Belsk",
+              "Ben_Salem",
+              "BONDVILLE",
+              "Bonanza_Creek",
+              "Bozeman",
+              "Brussels",
+              "Bujumbura",
+              "Burjassot",
+              "CARTEL",
+              "CLUJ_UBB",
+              "CUIABA-MIRANDA",
+              "Cabauw",
+              "Cairo_EMA_2",
+              "Campo_Grande_SONDA",
+              "Carpentras",
+              "Chen-Kung_Univ",
+              "Chiang_Mai_Met_Sta",
+              "Chiayi",
+              "Chilbolton",
+              "Dalanzadgad",
+              "Dhaka_University",
+              "Dushanbe",
+              "EPA-NCU",
+              "Egbert",
+              "El_Farafra",
+              "Evora",
+              "FZJ-JOYCE",
+              "Fort_McMurray",
+              "Fukuoka",
+              "GSFC",
+              "Gandhi_College",
+              "Granada",
+              "Gwangju_GIST",
+              "Halifax",
+              "Hankuk_UFS",
+              "Hong_Kong_PolyU",
+              "Hong_Kong_Sheung",
+              "IASBS",
+              "IER_Cinzana",
+              "IMAA_Potenza",
+              "Iasi_LOASL",
+              "Ispra",
+              "Jaipur",
+              "Ji_Parana_SE",
+              "Kanpur",
+              "Karachi",
+              "Karlsruhe",
+              "Kyiv",
+              "Lahore",
+              "Lake_Argyle",
+              "Lecce_University",
+              "Leipzig",
+              "Lille",
+              "Luang_Namtha",
+              "Lumbini",
+              "MD_Science_Center",
+              "Mainz",
+              "Manaus_EMBRAPA",
+              "Masdar_Institute",
+              "Medenine-IRA",
+              "Mexico_City",
+              "Mezaira",
+              "Minsk",
+              "Missoula",
+              "Modena",
+              "Moldova",
+              "Mongu_Inn",
+              "Moscow_MSU_MO",
+              "Munich_University",
+              "Murcia",
+              "Nong_Khai",
+              "Noto",
+              "OHP_OBSERVATOIRE",
+              "Omkoi",
+              "Osaka",
+              "Ouarzazate",
+              "Palaiseau",
+              "Palencia",
+              "Paris",
+              "Pokhara",
+              "Pretoria_CSIR-DPSS",
+              "Pune",
+              "Rimrock",
+              "Rio_Branco",
+              "Rome_Tor_Vergata",
+              "SANTA_CRUZ_UTEPSA",
+              "SEDE_BOKER",
+              "Saada",
+              "Sao_Paulo",
+              "Seoul_SNU",
+              "Silpakorn_Univ",
+              "Sioux_Falls",
+              "Skukuza",
+              "St_Louis_University",
+              "Tabernas_PSA-DLR",
+              "Taipei_CWB",
+              "Tamanrasset_INM",
+              "Thompson_Farm",
+              "Timisoara",
+              "Tizi_Ouzou",
+              "Tomsk",
+              "Tomsk_22",
+              "Toravere",
+              "Toulon",
+              "Tunis_Carthage",
+              "Ubon_Ratchathani",
+              "Univ_of_Houston",
+              "Ussuriysk",
+              "Wallops",
+              "XiangHe",
+              "Yakutsk",
+              "Yekaterinburg",
+              "Yellowknife_Aurora",
+              "Zinder_Airport",
+              "Zvenigorod",
+              "Gobabeb",
+              "La Crau"
+            ]
+          }
+        ]
+      }
+    ],
+    "result page": {
+      "page-header": "Please define a result page headline or remove this line",
+      "page-text": "Please define a result page text or remove this line",
+      "comment for Paolo": "according to list values documents without condition will always appear in the list of result documents",
+      "documents": [
+        "document with name 1.pdf",
+        "document with name 2.doc",
+        "document with name 3.bmp",
+        "document with name 4.xxx",
+        {
+          "condition": "if xxx is selected display the following documents",
+          "documents": [
+            "docA",
+            "docB",
+            "docC"
+          ]
+        },
+        "and so on ... continue this list"
+      ],
+      "footer text": "Please define a text which should appear below the result document list or remove this line",
+      "Additional download option to download all documents in a large zipped archive": "yes, no ?"
+    }
+  }
+}
